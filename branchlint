@@ -1,0 +1,14 @@
+#!/bin/bash
+
+if [ -z "$1" ]; then
+    echo "Usage: branchlint <branch-name>"
+    exit 1
+fi
+
+input="$1"
+id=$(echo "$input" | cut -d'-' -f1)
+type=$(echo "$input" | cut -d'-' -f2)
+
+description=$(echo "$input" | sed -E "s/^[0-9]+-$type-//" | tr '-' '_')
+
+echo "${type}/${description}"
