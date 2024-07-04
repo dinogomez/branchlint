@@ -3,6 +3,7 @@
 A simple script to convert branch names into a desired format.
 
 ## Features
+![image](https://github.com/dinogomez/branchlint/assets/41871666/c896c4b6-8f98-4c03-bfe1-00f7dcbc1c8a)
 
 - Converts branch names like `64-bug-typed-errors-for-dynamic-typed-routing` into `bug/typed_errors_for_dynamic_typed_routing`.
 
